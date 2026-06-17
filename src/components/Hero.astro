@@ -1,0 +1,42 @@
+---
+import jaimieAndJamesTitle from "../assets/hero.png";
+import engagementAnimation from "../assets/engagement.webp";
+---
+
+<section id="hero">
+    <img id="title" src={jaimieAndJamesTitle.src} alt="" fetchpriority="high" />
+    <img
+        id="eng-animation"
+        src={engagementAnimation.src}
+        alt=""
+        fetchpriority="high"
+    />
+</section>
+
+<style>
+    #hero {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 740px) {
+        #title {
+            height: 100%;
+        }
+        #eng-animation {
+            height: 100%;
+        }
+    }
+
+    #title {
+        position: absolute;
+        max-width: 100%;
+    }
+
+    #eng-animation {
+        max-width: 100%;
+    }
+</style>
