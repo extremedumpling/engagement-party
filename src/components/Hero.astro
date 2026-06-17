@@ -3,6 +3,17 @@ import jaimieAndJamesTitle from "../assets/hero.png";
 import engagementAnimation from "../assets/engagement.webp";
 ---
 
+<script>
+    const hero = document.getElementById("hero");
+    const introduction = document.getElementById("introduction");
+
+    hero?.addEventListener("click", () => {
+        introduction?.scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+</script>
+
 <section id="hero">
     <img id="title" src={jaimieAndJamesTitle.src} alt="" fetchpriority="high" />
     <img
